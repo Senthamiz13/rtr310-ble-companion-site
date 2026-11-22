@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101418" />
+    <meta name="description" content="An independent Bluetooth companion project for exploring bike connectivity, telemetry, and rider-focused features." />
+    <title>RTR Companion — Ride connected</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar wrap">
+      <a class="brand" href="#top" aria-label="RTR Companion home"><span class="brand-mark">R</span><span>RTR <b>COMPANION</b></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#downloads">Get the app</a>
+        <a class="nav-github" href="https://github.com/Senthamiz13/rtr310-ble-companion" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> INDEPENDENT BLUETOOTH COMPANION</p>
+          <h1>Your ride.<br /><span>Your connection.</span></h1>
+          <p class="intro">A community-built mobile companion exploring the connection between your phone and your motorcycle. Telemetry, rider display features, and a clearer view of the data moving over Bluetooth.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#downloads">Explore app availability <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://github.com/Senthamiz13/rtr310-ble-companion" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">Built for learning, testing, and responsible riding.</p>
+        </div>
+        <div class="hero-art" aria-label="Abstract motorcycle dashboard illustration" role="img">
+          <div class="art-grid"></div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="dash-card">
+            <div class="dash-head"><span>RIDE LINK</span><span class="dash-status"><i></i> READY</span></div>
+            <div class="dash-speed">--<small> km/h</small></div>
+            <div class="dash-rule"></div>
+            <div class="dash-stats"><div><span>ENGINE</span><b>LIVE DATA</b></div><div><span>PHONE</span><b>CONNECTED</b></div></div>
+            <div class="dash-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <span class="art-label label-top">BLUETOOTH · BLE</span><span class="art-label label-bottom">RIDE DATA / 01</span>
+          <span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Project topics"><div class="ticker-inner">TELEMETRY <span>✳</span> CONNECTIVITY <span>✳</span> RIDER DISPLAY <span>✳</span> OPEN DEVELOPMENT <span>✳</span> TELEMETRY <span>✳</span> CONNECTIVITY <span>✳</span> RIDER DISPLAY</div></section>
+
+      <section class="features wrap" id="features">
+        <div class="section-heading"><p class="eyebrow">WHAT WE’RE BUILDING</p><h2>Made for the ride<br />and the curious.</h2><p>Reverse-engineered with real Bluetooth captures and careful testing, then shaped into practical phone features.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-number">01 / DATA</span><div class="feature-icon">⌁</div><h3>Live telemetry</h3><p>Read bike notifications and decode known status fields into a clear ride view.</p></article>
+          <article class="feature-card"><span class="feature-number">02 / DISPLAY</span><div class="feature-icon">▤</div><h3>Rider display</h3><p>Explore supported bike display features such as custom greetings and digital documents.</p></article>
+          <article class="feature-card"><span class="feature-number">03 / CONTROL</span><div class="feature-icon">↗</div><h3>Phone integration</h3><p>Investigate phone status, ride controls, and Bluetooth behavior with transparent logs.</p></article>
+        </div>
+      </section>
+
+      <section class="download-section" id="downloads">
+        <div class="download-inner wrap">
+          <div><p class="eyebrow">APP AVAILABILITY</p><h2>Coming together,<br />one platform at a time.</h2><p class="download-copy">The iOS project is in development. Android source and installable builds are not available yet. Follow the repository for progress and release announcements.</p></div>
+          <div class="platform-list">
+            <div class="platform-row"><div class="platform-icon"></div><div><b>iOS</b><span>Development build · TestFlight release planned</span></div><span class="platform-state">IN PROGRESS</span></div>
+            <div class="platform-row"><div class="platform-icon android">●</div><div><b>Android</b><span>App source and APK not available yet</span></div><span class="platform-state state-muted">PLANNED</span></div>
+            <a class="button button-light" href="https://github.com/Senthamiz13/rtr310-ble-companion" target="_blank" rel="noreferrer">Follow development on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles wrap">
+        <p class="eyebrow">A NOTE ON THE PROJECT</p>
+        <div><h2>Independent work.<br /><span>Built with care.</span></h2><p>RTR Companion is an independent, unofficial project. It is not affiliated with, endorsed by, or supported by TVS Motor Company. Features depend on the bike model and firmware, and are still being tested. Always ride safely and follow local laws.</p></div>
+      </section>
+    </main>
+
+    <footer class="footer wrap"><a class="brand" href="#top"><span class="brand-mark">R</span><span>RTR <b>COMPANION</b></span></a><span>Independent project · © <span id="year">2026</span></span><a href="https://github.com/Senthamiz13/rtr310-ble-companion" target="_blank" rel="noreferrer">Source code ↗</a></footer>
+  </body>
+</html>
