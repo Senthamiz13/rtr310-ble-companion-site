@@ -1,6 +1,8 @@
-# RTR Companion Website
+# RTR Link Website
 
-Static project landing page for the RTR BLE Companion app. It is designed for GitHub Pages and lives in its own repository so website updates and app source releases can be managed independently.
+Static project landing page for the RTR Link app. It is designed for GitHub Pages and lives in its own repository so website updates and app source releases can be managed independently.
+
+The site uses a side-profile motorcycle silhouette with restrained theme accents as the RTR Link mark. The transparent image at `assets/rtr-link-bike.png` also serves as the favicon. It is fan-project artwork and does not use the TVS or Apache logo.
 
 ## Preview locally
 
@@ -30,4 +32,4 @@ The Apache RTR 310 product image in `assets/apache-rtr-310-official.webp` is ser
 
 ## Independence
 
-RTR Companion is an independent fan-made, open-source companion for Apache RTR owners. It complements and does not replace the official TVS app. It is not affiliated with, endorsed by, or supported by TVS Motor Company. The software is experimental, provided as-is, and used at the user's own risk. Product and company names belong to their respective owners.
+RTR Link is an independent fan-made, open-source companion for Apache RTR owners. It complements and does not replace the official TVS app. It is not affiliated with, endorsed by, or supported by TVS Motor Company. The software is experimental, provided as-is, and used at the user's own risk. Product and company names belong to their respective owners.

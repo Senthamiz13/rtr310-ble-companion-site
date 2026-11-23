@@ -19,3 +19,5 @@ body{background:#000;color:var(--text)}
 .phone-screen{background:#080a0b}
 .telemetry-panel{background:linear-gradient(145deg,#171a1c,#0b0c0d)}
 .download-section{background:#0a0b0c}
+.brand-mark{width:128px;height:64px;border:0;display:block;object-fit:contain;transform:none}
+@media(max-width:560px){.brand-mark{width:82px;height:42px}}
