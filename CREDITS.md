@@ -1,11 +1,5 @@
-# Image credits
+# Image source and rights
 
-## Apache RTR 310 photograph
+The Apache RTR 310 product image in `assets/apache-rtr-310-official.webp` is served by the [official TVS Apache RTR 310 website](https://www.tvsmotor.com/tvs-apache/apache-rtr-310). The image is reproduced without modification. TVS Motor Company retains all rights to the image and its trademarks. This project is an independent fan project and has no endorsement or reuse license from TVS. Attribution does not grant permission to reuse the image.
 
-- **Title:** Apache rtr 310.jpg
-- **Creator:** [Crazyranga](https://commons.wikimedia.org/wiki/User:Crazyranga)
-- **Source:** [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Apache_rtr_310.jpg)
-- **License:** [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
-- **Changes:** None. The photograph is displayed without alteration.
-
-The app-screen visuals on the website are illustrative HTML/CSS previews based on this project's interface. They are not actual screenshots from a released build and contain no live bike data.
+The interface previews are original HTML/CSS illustrations made for this project and are not screenshots of a released app.

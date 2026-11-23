@@ -24,10 +24,10 @@ Edit the platform status cards in `index.html` when a signed iOS beta or Android
 
 The iOS app is under development. Android app source and installable builds are not available yet. Do not imply that a store release or binary is ready until it has been built and published.
 
-## Image credits
+## Image source and rights
 
-The Apache RTR 310 photograph in `assets/apache-rtr-310.jpg` is by [Crazyranga](https://commons.wikimedia.org/wiki/User:Crazyranga), sourced from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Apache_rtr_310.jpg), and licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The photograph is shown unmodified. The app-screen visuals are HTML/CSS interface previews based on the project UI, not screenshots from a released app.
+The Apache RTR 310 product image in `assets/apache-rtr-310-official.webp` is served by the [official TVS Apache RTR 310 website](https://www.tvsmotor.com/tvs-apache/apache-rtr-310) and is reproduced without modification. TVS Motor Company retains rights to its product images and trademarks. This fan project has no endorsement or reuse license from TVS; attribution and disclaimers do not grant permission. The app-screen visuals are HTML/CSS previews, not released-app screenshots.
 
 ## Independence
 
-RTR Companion is an independent, unofficial project and is not affiliated with or endorsed by TVS Motor Company. Product and company names belong to their respective owners.
+RTR Companion is an independent fan-made, open-source companion for Apache RTR owners. It complements and does not replace the official TVS app. It is not affiliated with, endorsed by, or supported by TVS Motor Company. The software is experimental, provided as-is, and used at the user's own risk. Product and company names belong to their respective owners.
