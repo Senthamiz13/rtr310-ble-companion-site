@@ -33,19 +33,24 @@
           </div>
           <p class="hero-note">Built for learning, testing, and responsible riding.</p>
         </div>
-        <div class="hero-art" aria-label="Abstract motorcycle dashboard illustration" role="img">
-          <div class="art-grid"></div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="dash-card">
-            <div class="dash-head"><span>RIDE LINK</span><span class="dash-status"><i></i> READY</span></div>
-            <div class="dash-speed">--<small> km/h</small></div>
-            <div class="dash-rule"></div>
-            <div class="dash-stats"><div><span>ENGINE</span><b>LIVE DATA</b></div><div><span>PHONE</span><b>CONNECTED</b></div></div>
-            <div class="dash-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <figure class="bike-hero">
+          <img src="assets/apache-rtr-310.jpg" alt="Apache RTR 310 motorcycle parked beside a tree-lined road" />
+          <div class="image-shade"></div>
+          <div class="hero-photo-label"><span>APACHE RTR 310</span><span>CONNECTED RIDING</span></div>
+          <div class="phone-preview hero-phone" aria-label="Illustrative preview of the companion app telemetry screen">
+            <div class="phone-shell"><div class="phone-notch"></div><div class="phone-screen">
+              <div class="phone-brand"><span>RTR</span><small>COMPANION</small><i></i></div>
+              <div class="phone-connected"><i></i> Bike connected</div>
+              <div class="phone-section-title">Ride overview <small>LIVE</small></div>
+              <div class="phone-speed">-- <small>km/h</small></div>
+              <div class="phone-mini-grid"><div><small>ENGINE</small><b>— rpm</b></div><div><small>FUEL</small><b>— %</b></div></div>
+              <div class="phone-mode"><span>RIDING MODE</span><b>—</b></div>
+              <div class="phone-bottom"><i></i><i></i><i></i><i></i></div>
+            </div></div>
+            <span class="mock-label">APP UI PREVIEW</span>
           </div>
-          <span class="art-label label-top">BLUETOOTH · BLE</span><span class="art-label label-bottom">RIDE DATA / 01</span>
-          <span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span>
-        </div>
+          <figcaption class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Apache_rtr_310.jpg" target="_blank" rel="noreferrer">Crazyranga / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></figcaption>
+        </figure>
       </section>
 
       <section class="ticker" aria-label="Project topics"><div class="ticker-inner">TELEMETRY <span>✳</span> CONNECTIVITY <span>✳</span> RIDER DISPLAY <span>✳</span> OPEN DEVELOPMENT <span>✳</span> TELEMETRY <span>✳</span> CONNECTIVITY <span>✳</span> RIDER DISPLAY</div></section>
@@ -56,6 +61,37 @@
           <article class="feature-card"><span class="feature-number">01 / DATA</span><div class="feature-icon">⌁</div><h3>Live telemetry</h3><p>Read bike notifications and decode known status fields into a clear ride view.</p></article>
           <article class="feature-card"><span class="feature-number">02 / DISPLAY</span><div class="feature-icon">▤</div><h3>Rider display</h3><p>Explore supported bike display features such as custom greetings and digital documents.</p></article>
           <article class="feature-card"><span class="feature-number">03 / CONTROL</span><div class="feature-icon">↗</div><h3>Phone integration</h3><p>Investigate phone status, ride controls, and Bluetooth behavior with transparent logs.</p></article>
+        </div>
+      </section>
+
+      <section class="app-showcase wrap" id="app-preview">
+        <div class="showcase-heading"><p class="eyebrow">INSIDE THE APP</p><h2>Bike data, in<br />your pocket.</h2><p>Preview the companion’s telemetry dashboard and Digi Docs workflow. These are illustrative UI previews, not screenshots from a released build.</p></div>
+        <div class="showcase-phones">
+          <article class="showcase-device">
+            <div class="phone-shell showcase-shell"><div class="phone-notch"></div><div class="phone-screen">
+              <div class="phone-brand"><span>RTR</span><small>COMPANION</small><i></i></div>
+              <div class="phone-page-title">Bike dashboard</div>
+              <div class="phone-connected"><i></i> Connected</div>
+              <div class="telemetry-panel"><small>SPEED</small><div>— <em>km/h</em></div><span>Live bike data</span></div>
+              <div class="telemetry-grid"><div><small>ENGINE</small><b>— rpm</b></div><div><small>FUEL</small><b>— %</b></div><div><small>GEAR</small><b>—</b></div><div><small>MODE</small><b>—</b></div></div>
+              <div class="phone-docs-row"><span class="doc-icon">▤</span><span><b>Digi Docs</b><small>Saved documents</small></span><span class="chevron">›</span></div>
+              <div class="phone-bottom"><i class="selected"></i><i></i><i></i><i></i></div>
+            </div></div>
+            <div class="device-caption"><span>01</span><div><b>Telemetry</b><small>Connection and ride data</small></div></div>
+          </article>
+          <article class="showcase-device docs-device">
+            <div class="phone-shell showcase-shell"><div class="phone-notch"></div><div class="phone-screen">
+              <div class="phone-brand"><span>RTR</span><small>COMPANION</small><i></i></div>
+              <div class="phone-page-title">Digi Docs</div>
+              <div class="phone-connected"><i></i> Ready to send</div>
+              <div class="doc-preview"><div class="doc-preview-head">DOCUMENT PREVIEW</div><div class="doc-lines"><i></i><i></i><i></i></div><div class="doc-photo-placeholder">PHOTO<br />AREA</div></div>
+              <div class="phone-doc-name"><b>Saved document</b><small>Crop to fit · 800 × 480</small></div>
+              <div class="send-button">↑ &nbsp; Send to bike</div>
+              <div class="phone-bottom"><i></i><i class="selected"></i><i></i><i></i></div>
+            </div></div>
+            <div class="device-caption"><span>02</span><div><b>Digi Docs</b><small>Crop, save, and send</small></div></div>
+          </article>
+          <div class="showcase-note"><span>PREVIEW ONLY</span><p>Data values are intentionally blank. Actual telemetry appears only when the app is connected to a compatible bike.</p></div>
         </div>
       </section>
 

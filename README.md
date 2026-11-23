@@ -24,6 +24,10 @@ Edit the platform status cards in `index.html` when a signed iOS beta or Android
 
 The iOS app is under development. Android app source and installable builds are not available yet. Do not imply that a store release or binary is ready until it has been built and published.
 
+## Image credits
+
+The Apache RTR 310 photograph in `assets/apache-rtr-310.jpg` is by [Crazyranga](https://commons.wikimedia.org/wiki/User:Crazyranga), sourced from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Apache_rtr_310.jpg), and licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The photograph is shown unmodified. The app-screen visuals are HTML/CSS interface previews based on the project UI, not screenshots from a released app.
+
 ## Independence
 
 RTR Companion is an independent, unofficial project and is not affiliated with or endorsed by TVS Motor Company. Product and company names belong to their respective owners.
