@@ -18,6 +18,8 @@
       <nav aria-label="Main navigation">
         <a href="#features">Features</a>
         <a href="#roadmap">Roadmap</a>
+        <a href="#release-notes">Releases</a>
+        <a href="#support">Support</a>
         <a href="#feedback">Feedback</a>
         <a href="#downloads">Get the app</a>
         <a class="nav-github" href="https://github.com/Senthamiz13/rtr310-ble-companion" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -59,20 +61,36 @@
       <section class="ticker" aria-label="Project topics"><div class="ticker-inner">TELEMETRY <span>✳</span> CONNECTIVITY <span>✳</span> RIDER DISPLAY <span>✳</span> OPEN DEVELOPMENT <span>✳</span> TELEMETRY <span>✳</span> CONNECTIVITY <span>✳</span> RIDER DISPLAY</div></section>
 
       <section class="features wrap" id="features">
-        <div class="section-heading"><p class="eyebrow">WHAT WE’RE BUILDING</p><h2>Made for the ride<br />and the curious.</h2><p>Reverse-engineered with real Bluetooth captures and careful testing, then shaped into practical phone features.</p></div>
+        <div class="section-heading"><p class="eyebrow">CURRENT FEATURES</p><h2>What RTR Link<br />can do today.</h2><p>These features are based on the current app builds and protocol observations. Availability and behavior can vary by phone, bike firmware, and platform.</p></div>
         <div class="feature-grid">
-          <article class="feature-card"><span class="feature-number">01 / DATA</span><div class="feature-icon">⌁</div><h3>Live telemetry</h3><p>Read bike notifications and decode known status fields into a clear ride view.</p></article>
-          <article class="feature-card"><span class="feature-number">02 / DISPLAY</span><div class="feature-icon">▤</div><h3>Rider display</h3><p>Explore supported bike display features such as custom greetings and digital documents.</p></article>
-          <article class="feature-card"><span class="feature-number">03 / CONTROL</span><div class="feature-icon">↗</div><h3>Phone integration</h3><p>Investigate phone status, ride controls, and Bluetooth behavior with transparent logs.</p></article>
+          <article class="feature-card"><span class="feature-number">01 / CONNECTION</span><div class="feature-icon">⌁</div><h3>Bike connection</h3><p>Scan for the bike’s Bluetooth service, connect and subscribe to its live notifications. Save a preferred bike and rider name in Settings. The apps can reconnect in the background, subject to iOS and Android power and background rules.</p></article>
+          <article class="feature-card"><span class="feature-number">02 / DASHBOARD</span><div class="feature-icon">◉</div><h3>Ride dashboard</h3><p>Show live speed, RPM, odometer, fuel, gear and indicator state when supplied by the bike. Confirmed fields are shown as friendly values; fields still under investigation stay labeled as raw data.</p></article>
+          <article class="feature-card"><span class="feature-number">03 / BIKE STATUS</span><div class="feature-icon">▤</div><h3>Modes and status</h3><p>Display riding modes as Urban, Rain, Tour (Sport), Rally (Track), or Supermoto. The side-stand state is decoded from the observed status bit. Overspeed threshold is shown from the bike’s status data.</p></article>
+          <article class="feature-card"><span class="feature-number">04 / RIDE DISTANCE</span><div class="feature-icon">↗</div><h3>Trip A</h3><p>Show the current ride-distance value as Trip A. Its encoded tenths-of-a-kilometre value is scaled for display—for example, 3194 is 319.4 km. Trip B, Trip C, and Day Trip are not yet separately mapped from the live feed.</p></article>
+          <article class="feature-card"><span class="feature-number">05 / DIGI DOCS</span><div class="feature-icon">▧</div><h3>Crop, save and upload documents</h3><p>Choose an image, crop it to the bike display’s 5:3 layout, preview and save it, then send it over Bluetooth with transfer progress. iOS currently offers three slots; Android currently exposes five, so slot behavior is not yet consistent between platforms. After the bike confirms a successful upload, the app can show “Name Done” on the display briefly, then clear it.</p></article>
+          <article class="feature-card"><span class="feature-number">06 / RIDER CONTROLS</span><div class="feature-icon">⌘</div><h3>Welcome and D-pad actions</h3><p>Send the configured rider name in the observed welcome-text frame when a connection starts, then clear that welcome after five seconds. Configure double-press actions for the detected Enter, Back and Down D-pad events, such as next track, previous track, or pause.</p></article>
+          <article class="feature-card"><span class="feature-number">07 / LOGGING</span><div class="feature-icon">≋</div><h3>BLE investigation logs</h3><p>Record bike-to-phone notifications and phone-to-bike writes with timestamps, decoded fields, and mapped or unmapped labels. Add a timestamped action note while testing to help correlate what you did with the Bluetooth traffic. Redact personal data before sharing logs.</p></article>
+          <article class="feature-card"><span class="feature-number">08 / PLATFORM NOTES</span><div class="feature-icon">◌</div><h3>Platform-specific controls</h3><p>Android includes configurable media-volume actions; the RTR Link iOS settings currently omit them. Digi Docs slot counts and background behavior also differ between current platform builds; check the platform-specific installation notes.</p></article>
         </div>
       </section>
 
       <section class="features wrap roadmap-section" id="roadmap">
-        <div class="section-heading"><p class="eyebrow">WHAT’S NEXT</p><h2>Ideas on the<br />roadmap.</h2><p>These are planned or exploratory areas. Each depends on confirming bike support and testing the phone-to-bike behavior.</p></div>
+        <div class="section-heading"><p class="eyebrow">UPCOMING · NOT RELEASED</p><h2>Where we’d like<br />to take it next.</h2><p>Roadmap items are goals for investigation, not promises or features already in the app. Each needs protocol evidence, implementation, and real-device testing.</p></div>
         <div class="feature-grid">
-          <article class="feature-card"><span class="feature-number">PLANNED / NAVIGATION</span><div class="feature-icon">↗</div><h3>Google Maps guidance</h3><p>Explore sending turn-by-turn navigation guidance from Google Maps to the bike display.</p></article>
-          <article class="feature-card"><span class="feature-number">PLANNED / ALERTS</span><div class="feature-icon">♪</div><h3>Bike-to-phone alerts</h3><p>Investigate audio and vibration alerts on the phone for events reported by the bike.</p></article>
-          <article class="feature-card"><span class="feature-number">EXPLORING / RESEARCH</span><div class="feature-icon">⌁</div><h3>Firmware feasibility</h3><p>Research whether a separate bike firmware project is technically feasible. No custom firmware or update is available.</p></article>
+          <article class="feature-card"><span class="feature-number">PLANNED / NAVIGATION</span><div class="feature-icon">↗</div><h3>Google Maps guidance</h3><p>Investigate how to pass useful turn instructions from Google Maps to the bike display. Work includes identifying the navigation message format, deciding which prompts the display supports, keeping updates timely, and testing route changes and loss of connection. The protocol and display behavior still need confirmation.</p></article>
+          <article class="feature-card"><span class="feature-number">PLANNED / BIKE ALERTS</span><div class="feature-icon">♪</div><h3>Audio and vibration alerts</h3><p>Identify which bike warnings are actually exposed over Bluetooth, map and verify each warning, then let riders choose phone audio and vibration behavior. The aim is to avoid guessing from unknown bits or generating alerts from unconfirmed data.</p></article>
+          <article class="feature-card"><span class="feature-number">EXPLORING / FIRMWARE</span><div class="feature-icon">⌁</div><h3>Firmware feasibility research</h3><p>Research whether any separate firmware work is technically and safely possible. No custom firmware, bike firmware modification, or flashing tool exists in RTR Link. Any future work would need a clear recovery plan and rigorous safety validation.</p></article>
+          <article class="feature-card"><span class="feature-number">RESEARCH / TELEMETRY</span><div class="feature-icon">◉</div><h3>More trip meters and field mappings</h3><p>Continue capture-based analysis to determine whether Trip B, Trip C, Day Trip, and currently unknown diagnostic values are available in the live BLE stream. Add a value to the normal dashboard only after its meaning and scaling are confirmed.</p></article>
+          <article class="feature-card"><span class="feature-number">PLANNED / PLATFORM PARITY</span><div class="feature-icon">▤</div><h3>Align iOS and Android</h3><p>Bring document slots, crop and resize behavior, upload feedback, and the shared visual language into closer alignment. Current differences are documented in the feature list rather than hidden.</p></article>
+        </div>
+      </section>
+
+      <section class="features wrap release-section" id="release-notes">
+        <div class="section-heading"><p class="eyebrow">VERSION HISTORY</p><h2>Release notes<br />and build status.</h2><p>Versions below are taken from the current app project metadata. A development build is not the same as a store release.</p></div>
+        <div class="release-list">
+          <article class="release-card"><div class="release-heading"><div><span class="feature-number">ANDROID · APK</span><h3>Version 0.1.0 <small>(version code 1)</small></h3></div><span class="release-badge">AVAILABLE</span></div><p>Current downloadable Android build. This is a direct APK release, not a Google Play listing.</p><ul><li>Bluetooth scan, connection, and telemetry display.</li><li>Rider name and welcome text; configurable D-pad media actions.</li><li>Digi Docs image preparation and Bluetooth transfer workflow.</li><li>Timestamped BLE event and action-marker logging.</li></ul><a href="downloads/rtr-link-android-0.1.0.apk" download>Download Android 0.1.0 APK ↓</a></article>
+          <article class="release-card"><div class="release-heading"><div><span class="feature-number">IOS · XCODE DEVELOPMENT BUILD</span><h3>Version 1.0 <small>(build 1)</small></h3></div><span class="release-badge release-muted">NOT A PUBLIC RELEASE</span></div><p>Version recorded in the iOS project. Install on a personal iPhone using the <a href="ios-install.html">Xcode guide</a>; there is no App Store or TestFlight build.</p><ul><li>SwiftUI dashboard and Bluetooth connection for compatible bikes.</li><li>Rider settings, welcome text, configurable D-pad media controls, and logging.</li><li>Digi Docs crop, save, preview, and upload flow with three displayed slots.</li></ul></article>
+          <p class="release-footnote">Release notes describe included project functionality, not a guarantee that every feature works on every phone, bike year, or firmware. Check the README and protocol notes for known limitations.</p>
         </div>
       </section>
 
@@ -117,6 +135,19 @@
             <a class="button button-light" href="downloads/rtr-link-android-0.1.0.apk" download>Download Android APK <span aria-hidden="true">↓</span></a>
             <a class="all-issues" href="https://github.com/Senthamiz13/rtr310-ble-companion" target="_blank" rel="noreferrer">Follow development on GitHub ↗</a>
           </div>
+        </div>
+      </section>
+
+      <section class="features wrap support-section" id="support">
+        <div class="section-heading"><p class="eyebrow">COMMUNITY SUPPORT</p><h2>Help fund a<br />store release.</h2><p>Contributions would go toward developer account fees and release preparation. Support does not buy influence over features and does not guarantee that either store will approve the app.</p></div>
+        <div class="funding-panel">
+          <div class="funding-costs">
+            <article><span class="feature-number">APPLE · RECURRING</span><strong>USD $99 / year</strong><p>Apple Developer Program membership, billed annually. Local price may vary.</p><a href="https://developer.apple.com/help/account/membership/program-enrollment/" target="_blank" rel="noreferrer">Apple fee details ↗</a></article>
+            <article><span class="feature-number">GOOGLE PLAY · ONE-TIME</span><strong>USD $25</strong><p>Play Console developer account registration. Taxes or payment conversion may affect the total.</p><a href="https://support.google.com/googleplay/android-developer/answer/6112435" target="_blank" rel="noreferrer">Google fee details ↗</a></article>
+          </div>
+          <div class="funding-total"><span class="feature-number">STORE ACCOUNT FEES · FIRST YEAR</span><strong>USD $124 <small>before taxes and conversion fees</small></strong><p>Apple’s annual membership continues each year; Google’s registration is a one-time fee. This estimate excludes any optional services, hardware, or ongoing maintenance.</p></div>
+          <div class="funding-next"><h3>How to make the funding request credible</h3><ol><li>Set up a GitHub Sponsors profile and verify that payouts are enabled for your account. India is currently listed as a supported payout region by GitHub.</li><li>Publish a clear goal and budget, and keep a public record of money received and store fees paid. Call it project support, not a tax-deductible charity donation.</li><li>Only add a payment button after the sponsor or payment account is active. The site currently has no payment link and is not collecting money.</li><li>Keep the source and APK available. Once the accounts are ready, complete store identity, privacy, safety, testing, and review requirements before promising a launch date.</li></ol><a href="https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors" target="_blank" rel="noreferrer">Read how GitHub Sponsors works ↗</a></div>
+          <div class="funding-note"><b>Google Play testing:</b> if this is a new personal Play Console account created after November 13, 2023, Google currently requires a closed test with at least 12 opted-in testers for 14 continuous days before applying for production access. <a href="https://support.google.com/googleplay/android-developer/answer/14151465" target="_blank" rel="noreferrer">See Google’s current requirement ↗</a></div>
         </div>
       </section>
 

@@ -22,9 +22,15 @@ The site is plain HTML and CSS. In the GitHub repository, open **Settings → Pa
 
 Edit the platform status cards in `index.html` when an iOS or Android release changes. The [iOS installation guide](ios-install.html) documents running a development build on a personal iPhone through Xcode. Link Android users to a Google Play testing/release page or a signed APK release.
 
+## Features, roadmap, and releases
+
+The landing page lists current app behavior, platform-specific limitations, planned work, and versioned release notes. Keep those descriptions aligned with the app source and its version metadata. Do not describe roadmap items as available features or development builds as store releases.
+
+The funding section is informational only until a real payout profile or payment link is configured. Never add a donation button that does not lead to an active, verified account.
+
 ## Project status
 
-The Android 0.1.0 APK is available for direct download from the landing page. It is not a Google Play release. iPhone owners can build and install the iOS app on their own device with Xcode and a free Apple Account; the Personal Team signing expires after 7 days and must be refreshed from Xcode. There is no public iOS binary or TestFlight build. Broader iOS distribution requires Apple Developer Program membership.
+The Android 0.1.0 APK is available for direct download from the landing page. It is not a Google Play release. iPhone owners can build and install the iOS app on their own device with Xcode and a free Apple Account; the Personal Team signing expires after 7 days and must be refreshed from Xcode. There is no public iOS binary or TestFlight build. Broader iOS distribution requires Apple Developer Program membership. Current project metadata lists iOS version 1.0, build 1; that is an Xcode development build, not a public release.
 
 ## Image source and rights
 
