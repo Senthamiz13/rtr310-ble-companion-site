@@ -26,7 +26,13 @@ Edit the platform status cards in `index.html` when an iOS or Android release ch
 
 The landing page lists current app behavior, platform-specific limitations, planned work, and versioned release notes. Keep those descriptions aligned with the app source and its version metadata. Do not describe roadmap items as available features or development builds as store releases.
 
-The funding section is informational only until a real payout profile or payment link is configured. Never add a donation button that does not lead to an active, verified account.
+Funding is paused. The site must not show a payment or sponsorship button until the project owner decides to reopen fundraising and verifies the payout destination.
+
+## Community feedback and traffic
+
+The landing page sends bug reports and feature requests to GitHub Issues, and general questions/comments to GitHub Discussions. Discussions must be enabled in the app repository under **Settings → General → Features → Discussions** before the public discussions link can be used.
+
+GitHub repository **Insights → Traffic** shows repository views, unique visitors, referrers, and popular content for the last 14 days; these are repository metrics, not visits to the GitHub Pages website. To measure website page views, add a separate analytics service only after choosing one and reviewing its privacy implications.
 
 ## Project status
 
