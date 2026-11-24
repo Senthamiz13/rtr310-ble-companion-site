@@ -24,7 +24,7 @@ Edit the platform status cards in `index.html` when a signed iOS beta or Android
 
 ## Project status
 
-The iOS app is under development. Android app source and installable builds are not available yet. Do not imply that a store release or binary is ready until it has been built and published.
+The Android 0.1.0 APK is available for direct download from the landing page. It is not a Google Play release. The iOS app is under development; do not imply an iOS store release is ready until it has been built and published.
 
 ## Image source and rights
 
