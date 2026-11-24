@@ -20,11 +20,11 @@ The site is plain HTML and CSS. In the GitHub repository, open **Settings → Pa
 
 ## Updating app availability
 
-Edit the platform status cards in `index.html` when a signed iOS beta or Android release becomes available. Link iOS users to TestFlight or the App Store; link Android users to a Google Play testing/release page or a signed APK release.
+Edit the platform status cards in `index.html` when an iOS or Android release changes. The [iOS installation guide](ios-install.html) documents running a development build on a personal iPhone through Xcode. Link Android users to a Google Play testing/release page or a signed APK release.
 
 ## Project status
 
-The Android 0.1.0 APK is available for direct download from the landing page. It is not a Google Play release. The iOS app is under development; do not imply an iOS store release is ready until it has been built and published.
+The Android 0.1.0 APK is available for direct download from the landing page. It is not a Google Play release. iPhone owners can build and install the iOS app on their own device with Xcode and a free Apple Account; the Personal Team signing expires after 7 days and must be refreshed from Xcode. There is no public iOS binary or TestFlight build. Broader iOS distribution requires Apple Developer Program membership.
 
 ## Image source and rights
 

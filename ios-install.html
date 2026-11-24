@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Install RTR Link on your own iPhone using Xcode and a free Apple Account." />
+    <title>Install RTR Link on iPhone — RTR Link</title>
+    <link rel="icon" type="image/png" href="assets/rtr-link-bike.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .install-page{padding-block:64px 90px}.install-page .eyebrow{margin-bottom:16px}.install-page h1{font-size:clamp(40px,6vw,66px);letter-spacing:-.06em;line-height:1.03;margin:0;max-width:850px}.install-page h1 span{color:var(--accent)}.install-lead{max-width:760px;color:var(--muted);font-size:15px;line-height:1.85;margin:22px 0 34px}.install-callout{border:1px solid #594332;background:#17120f;border-radius:14px;padding:20px 22px;margin:25px 0 44px;color:#d9c5b5;line-height:1.75;font-size:13px}.install-callout b{color:#fff}.install-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.install-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}.install-card h2{font-size:20px;margin:0 0 16px}.install-card ol,.install-card ul{padding-left:21px;margin:0;color:var(--muted);font-size:13px;line-height:1.9}.install-card li+li{margin-top:9px}.install-card a,.install-links a{color:var(--acid)}.install-card code{font:11px var(--mono);color:#e8a18d;overflow-wrap:anywhere}.install-card pre{white-space:pre-wrap;background:#08090a;border:1px solid var(--line);padding:14px;border-radius:9px;overflow-wrap:anywhere}.install-wide{grid-column:1/-1}.install-links{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:24px;font-size:12px}.install-footer{margin-top:34px;color:var(--muted);font-size:12px}.install-footer a{color:var(--text)}@media(max-width:700px){.install-page{padding-block:48px 65px}.install-grid{grid-template-columns:1fr}.install-wide{grid-column:auto}.install-card{padding:20px}.install-lead{font-size:14px}}
+    </style>
+  </head>
+  <body>
+    <header class="topbar wrap">
+      <a class="brand" href="index.html" aria-label="RTR Link home"><img class="brand-mark" src="assets/rtr-link-bike.png" alt="" /><span>RTR <b>LINK</b></span></a>
+      <nav aria-label="Page navigation"><a href="index.html#features">Features</a><a href="index.html#downloads">Downloads</a><a class="nav-github" href="https://github.com/Senthamiz13/rtr310-ble-companion" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+    </header>
+    <main class="install-page wrap">
+      <p class="eyebrow">IPHONE · PERSONAL DEVELOPMENT INSTALL</p>
+      <h1>Install with Xcode<br /><span>on your own iPhone.</span></h1>
+      <p class="install-lead">A Mac, Xcode, and a free Apple Account are enough to build RTR Link and run it on your personal iPhone. This is a development install that you perform from Xcode; it is not an iOS download link that anyone can install from the website.</p>
+      <div class="install-callout"><b>What this means:</b> you can try the app on your own device without TestFlight or a paid Apple Developer Program membership. The free Personal Team signing is temporary and intended for personal development and testing. Public iPhone distribution through TestFlight or the App Store requires Apple Developer Program membership.</div>
+
+      <div class="install-grid">
+        <section class="install-card"><h2>Before you start</h2><ul><li>A Mac that can run a current version of <a href="https://developer.apple.com/xcode/" target="_blank" rel="noreferrer">Xcode</a>.</li><li>A free Apple Account added in Xcode under <b>Xcode → Settings → Accounts</b>.</li><li>Your iPhone, a USB cable, and the device passcode.</li><li>An iPhone running iOS 16 or later. RTR Link currently targets iOS 16+.</li></ul></section>
+        <section class="install-card"><h2>1. Get the project</h2><p>In Terminal, clone the public source repository:</p><pre><code>git clone https://github.com/Senthamiz13/rtr310-ble-companion.git
+cd rtr310-ble-companion
+open ios/TVSBike.xcodeproj</code></pre></section>
+        <section class="install-card install-wide"><h2>2. Set up signing in Xcode</h2><ol><li>In Xcode’s project navigator, select the <b>TVSBike</b> project, then select the <b>TVSBike</b> app target.</li><li>Open <b>Signing &amp; Capabilities</b> and enable <b>Automatically manage signing</b>.</li><li>Choose your Apple Account’s <b>Personal Team</b> in the Team menu.</li><li>If Xcode reports that the bundle identifier is already in use, change it to a unique identifier, such as <code>com.yourname.RTRLink</code>.</li></ol></section>
+        <section class="install-card"><h2>3. Run it on iPhone</h2><ol><li>Connect and unlock your iPhone. If prompted, trust this Mac on the phone.</li><li>Select your iPhone as the run destination in Xcode’s toolbar.</li><li>Press the Run button (▶) and wait for Xcode to build and install the app.</li><li>If iPhone asks for Developer Mode, go to <b>Settings → Privacy &amp; Security → Developer Mode</b>, turn it on, restart, then confirm.</li><li>Open RTR Link and allow Bluetooth access when prompted.</li></ol></section>
+        <section class="install-card"><h2>Keep the install working</h2><p>With a free Personal Team, the development provisioning profile expires after <b>7 days</b>. When the app stops opening, connect the phone to the Mac and run the app again from Xcode to refresh the signing and install it again.</p><p>Apple currently limits a Personal Team to 10 App IDs and 3 registered devices, with the relevant registrations expiring after 7 days. These limits can change; see Apple’s account documentation.</p></section>
+        <section class="install-card install-wide"><h2>Want to share it with other iPhone users?</h2><p>This Xcode route is for installing your own development build. It does not create a public website download. Wider distribution via TestFlight or the App Store requires joining Apple’s Developer Program (currently USD $99 per year; local pricing may vary). There is no RTR Link TestFlight build available at this time.</p><p>Android users can install the <a href="downloads/rtr-link-android-0.1.0.apk">Android 0.1.0 APK</a> from the downloads section.</p></section>
+      </div>
+      <div class="install-links"><a href="https://developer.apple.com/help/account/membership/program-enrollment/">Apple Developer Program membership ↗</a><a href="https://developer.apple.com/help/account/basics/about-your-developer-account/">Personal Team limits ↗</a><a href="https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices">Run on a physical device ↗</a><a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Developer Mode ↗</a></div>
+      <p class="install-footer"><a href="index.html">← Back to RTR Link</a> · Fan-made, unofficial software. Use at your own risk.</p>
+    </main>
+  </body>
+</html>
