@@ -30,7 +30,7 @@ Funding is paused. The site must not show a payment or sponsorship button until 
 
 ## Community feedback and traffic
 
-The landing page sends bug reports and feature requests to GitHub Issues, and general questions/comments to GitHub Discussions. Discussions must be enabled in the app repository under **Settings → General → Features → Discussions** before the public discussions link can be used.
+The landing page sends bug reports, feature requests, and requests to support other motorcycle models to GitHub Issues, and general questions/comments to GitHub Discussions. Discussions must be enabled in the app repository under **Settings → General → Features → Discussions** before the public discussions link can be used.
 
 GitHub repository **Insights → Traffic** shows repository views, unique visitors, referrers, and popular content for the last 14 days; these are repository metrics, not visits to the GitHub Pages website. To measure website page views, add a separate analytics service only after choosing one and reviewing its privacy implications.
 
